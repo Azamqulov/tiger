@@ -164,7 +164,8 @@
       <!-- Appearance Content -->
       <div class="blog-content">
         <h1 class="blog-text">
-          Амурский тигр имеет мощное телосложение, густую и длинную шерсть, окрашенную в светло-оранжевый с черными полосами. Его сильные конечности и большие лапы помогают  охотиться и проворно передвигаться 
+          Амурский тигр имеет мощное телосложение, густую и длинную шерсть, окрашенную в светло-оранжевый с черными
+          полосами. Его сильные конечности и большие лапы помогают охотиться и проворно передвигаться
         </h1>
         <div class="blog-img blog-img1">
           <div class="img-hover hover-1">
@@ -189,7 +190,7 @@
         </div>
         <h1 class="blog-text">
           Внутреннее строение амурского тигра включает прочный скелет, мощные мышцы, а также развитую нервную систему
-и сенсорные органы. Эти характеристики делают тигра сильным хищником в дикой природе.
+          и сенсорные органы. Эти характеристики делают тигра сильным хищником в дикой природе.
         </h1>
       </div>
       <!-- blog-footer -->
@@ -204,8 +205,9 @@
           <div class="modal-content">
             <p>
               Амурский тигр имеет уникальную шерсть, состоящую из двух слоев: подшерстка
-для сохранения тепла и остевых волос для защиты от влаги. Черные полосы на рыжем фоне помогают им маскироваться
-в лесу и уникальны для каждого тигра, подобно отпечаткам пальцев у человека.
+              для сохранения тепла и остевых волос для защиты от влаги. Черные полосы на рыжем фоне помогают им
+              маскироваться
+              в лесу и уникальны для каждого тигра, подобно отпечаткам пальцев у человека.
             </p>
           </div>
         </div>
@@ -244,8 +246,8 @@
       <div class="data-modal">
         <div class="data-modal-1 modal">
           <p>
-         Тигры являются самыми крупными из всех тигров, достигая веса до 300 кг
-и длины до 3 метров, включая хвост. Это делает их одними из самых мощных хищников в своем ареале.
+            Тигры являются самыми крупными из всех тигров, достигая веса до 300 кг
+            и длины до 3 метров, включая хвост. Это делает их одними из самых мощных хищников в своем ареале.
 
           </p>
         </div>
@@ -253,24 +255,26 @@
         <div class="data-modal-2 modal">
           <p>
             Хотя амурские тигры
-в основном одиночные животные, они могут образовывать временные связи во время спаривания или в период заботы
-о потомстве. Самки заботятся
-о своих тигрятах, обучая их навыкам выживания.
+            в основном одиночные животные, они могут образовывать временные связи во время спаривания или в период
+            заботы
+            о потомстве. Самки заботятся
+            о своих тигрятах, обучая их навыкам выживания.
           </p>
         </div>
         <!-- 2 -->
         <div class="data-modal-3 modal">
           <p>
             Амурские тигры находятся под угрозой исчезновения
-из-за потери среды обитания, браконьерства и уменьшения численности добычи. Множество программ
-по охране и восстановлению их популяции активно работают над улучшением ситуации.
+            из-за потери среды обитания, браконьерства и уменьшения численности добычи. Множество программ
+            по охране и восстановлению их популяции активно работают над улучшением ситуации.
           </p>
         </div>
         <!-- 3 -->
         <div class="data-modal-4 modal">
           <p>
             Самки амурских тигров обычно рождают от 2 до 4 тигрят, которых они выкармливают и защищают
-в течение первых нескольких месяцев жизни. Тигрята остаются с матерью до 2-3 лет, прежде чем становятся независимыми.
+            в течение первых нескольких месяцев жизни. Тигрята остаются с матерью до 2-3 лет, прежде чем становятся
+            независимыми.
           </p>
         </div>
       </div>
@@ -310,8 +314,9 @@
       </div>
 
       <div class="slider-text">
-        Эти виды животных составляют важную часть экосистемы, в которой живет Амурский тигр, выступая кормовой основой, и играют важную роль в поддержании баланса
-в природе.
+        Эти виды животных составляют важную часть экосистемы, в которой живет Амурский тигр, выступая кормовой основой,
+        и играют важную роль в поддержании баланса
+        в природе.
       </div>
 
       <hr style="border: none; margin: 100px 0" />
@@ -346,7 +351,8 @@
       </div>
 
       <div class="slider-text">
-      Эти животные могут взаимодействовать с Амурским тигром как конкуренты или потенциальные угрозы, создавая сложные отношения в экосистеме.
+        Эти животные могут взаимодействовать с Амурским тигром как конкуренты или потенциальные угрозы, создавая сложные
+        отношения в экосистеме.
       </div>
     </div>
   </section>
@@ -366,7 +372,122 @@
       </div>
     </div>
   </footer>
-  <script src="main.js"></script>
+  <script>
+    // ==========================================
+    // 1. UNIVERSAL MODAL OPENER (btn + text)
+    // ==========================================
+    const backdrop = document.getElementById("modal-backdrop");
+
+    document.querySelectorAll("[data-modal]").forEach((trigger) => {
+      trigger.addEventListener("click", function (e) {
+        e.stopPropagation(); // Prevent event bubbling
+
+        const name = this.getAttribute("data-modal").trim();
+
+        // Close all currently open boxes and modals
+        document.querySelectorAll(".box, .modal").forEach((el) => {
+          el.classList.remove("active");
+        });
+
+        // Open the target element and the backdrop
+        const target = document.querySelector(`.${name}`);
+        if (target) {
+          target.classList.add("active");
+          if (backdrop) backdrop.classList.add("active");
+        }
+      });
+    });
+
+    // ==========================================
+    // 2. GLOBAL CLOSE FUNCTION
+    // ==========================================
+    function closeAllModals() {
+      document.querySelectorAll(".box, .modal, .modal-backdrop").forEach((el) => {
+        el.classList.remove("active");
+      });
+    }
+
+    // Close when clicking the semi-transparent backdrop
+    if (backdrop) {
+      backdrop.addEventListener("click", closeAllModals);
+    }
+
+    // Close logic for clicking within the modal area (optional functionality)
+    document.querySelectorAll(".box, .modal").forEach((el) => {
+      el.addEventListener("click", function (e) {
+        // If clicking directly on the modal container or the paragraph inside (as per original logic)
+        if (e.target === this || e.target.tagName === "P") {
+          closeAllModals();
+        }
+      });
+    });
+
+    // ==========================================
+    // 3. KEYBOARD SUPPORT (Escape key to close everything)
+    // ==========================================
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeAllModals();
+      }
+    });
+
+    // ==========================================
+    // 4. MOBILE HAMBURGER MENU TOGGLE
+    // ==========================================
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.querySelector(".menu");
+
+    if (hamburger && menu) {
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      // Automatically close mobile menu when a navigation link is clicked
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+    }
+    // ==========================================
+    // 5. HORIZONTAL SCROLL ON VERTICAL SCROLL
+    // ==========================================
+    // ==========================================
+    // 5. HORIZONTAL SCROLL ON VERTICAL SCROLL
+    // ==========================================
+    // ==========================================
+    // 5. HORIZONTAL SCROLL ON VERTICAL SCROLL
+    // ==========================================
+    // ==========================================
+    // 5. DIRECT HORIZONTAL WHEEL SCROLL
+    // ==========================================
+    const sliders = document.querySelectorAll(".slider");
+
+    sliders.forEach((slider) => {
+      slider.addEventListener("wheel", (e) => {
+        // Only apply on desktop
+        if (window.innerWidth > 992) {
+          const canScrollLeft = slider.scrollLeft > 0;
+          const canScrollRight = slider.scrollLeft < (slider.scrollWidth - slider.clientWidth);
+
+          // If we can't scroll further in the requested direction, let the page scroll
+          if ((e.deltaY > 0 && !canScrollRight) || (e.deltaY < 0 && !canScrollLeft)) {
+            return;
+          }
+
+          if (e.deltaY !== 0) {
+            // Prevent default vertical page scroll
+            e.preventDefault();
+            // Scroll horizontal based on vertical wheel delta
+            slider.scrollLeft += e.deltaY;
+          }
+        }
+      }, { passive: false });
+    });
+
+  </script>
 </body>
 
 </html>
