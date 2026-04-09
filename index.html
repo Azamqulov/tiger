@@ -1,395 +1,385 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amur Tiger - Endangered Species</title>
-    <!-- Main CSS Link -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- Overlay for Modals -->
-    <div class="modal-backdrop" id="modal-backdrop"></div>
-    <header id="home">
-      <div class="navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amur Tiger - Endangered Species</title>
+  <!-- Main CSS Link -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Overlay for Modals -->
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+  <header id="home">
+    <div class="navbar">
+      <div class="container">
+        <!-- Site Logo -->
+        <div class="logo">
+          <a href="#home"> <img src="img/logo.png" alt="Tiger Logo" /></a>
+        </div>
+        <!-- Navigation Menu -->
+        <ul class="menu">
+          <a href="#ареал"> <button class="btn">ареал</button></a>
+          <a href="#строение"> <button class="btn">строение</button></a>
+          <a href="#особенности"> <button class="btn">особенности</button></a>
+          <a href="#роль-в-среде"> <button class="btn">
+              роль в среде
+            </button></a>
+        </ul>
+        <!-- Hamburger Toggle Icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- navbar end -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="content-text">
+        <img src="img/hero-text.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+  <!-- Habitat Section -->
+  <section class="info-section" id="ареал">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="info-title">
+        <img src="img/info-title.png" alt="Habitat Title" />
+      </div>
+      <!-- Regional Information Overview -->
+      <div class="info-context">
+        <div class="info-box">
+          <div class="item">
+            <img src="img/Star .png" alt="" />
+            <h1>Хабаровский край</h1>
+          </div>
+          <div class="item">
+            <img src="img/Star .png" alt="" />
+            <h1>Приморский край</h1>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="item">
+            <img src="img/Star .png" alt="" />
+            <h1>Южная Корея</h1>
+          </div>
+          <div class="item">
+            <img src="img/Star .png" alt="" />
+            <h1>КНДР</h1>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="info-block">
+        <button class="btn btn1" data-modal="box1">Хабаровский край</button>
+        <button class="btn btn2" data-modal="box2">Приморский край</button>
+        <button class="btn btn3" data-modal="box3">Южная Корея</button>
+        <button class="btn btn4" data-modal="box4">КНДР</button>
+
+        <div class="info">
+          <span>*чтобы узнать подробности, кликните <br />
+            на название региона обитания</span>
+        </div>
+
         <div class="container">
-          <!-- Site Logo -->
-          <div class="logo">
-           <a href="#home"> <img src="img/logo.png" alt="Tiger Logo" /></a>
-          </div>
-          <!-- Navigation Menu -->
-          <ul class="menu">
-            <button class="btn"><a href="#ареал">ареал</a></button>
-            <button class="btn"><a href="#строение">строение</a></button>
-            <button class="btn"><a href="#особенности">особенности</a></button>
-            <button class="btn">
-              <a href="#роль-в-среде">роль в среде</a>
-            </button>
-          </ul>
-          <!-- Hamburger Toggle Icon -->
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="info-modal">
+            <div class="box box1">
+              <p>
+                В Хабаровском крае амурские тигры встречаются в основном на
+                востоке региона, где находятся обширные лесные массивы, тайга
+                og горные районы. Основные места обитания включают
+                Национальный парк "Земля леопарда" og другие охраняемые
+                территории. Эти места обеспечивают тиграм необходимую пищу
+                (например, кабаны og косули) og укрытие.
+              </p>
+              <img src="img/modal-1.png" alt="rasim" />
+            </div>
+            <!-- 1 -->
+            <div class="box box2">
+              <p>
+                Приморский край является одним из ключевых ареалов обитания
+                амурских тигров. Здесь находятся заповедники, такие как "Земля
+                леопарда", а также другие охраняемые природные территории.
+                Леса Приморского края, включая смешанные og хвойные леса,
+                предоставляют тиграм подходящие условия для охоты og укрытия
+              </p>
+              <img src="img/modal-2.png" alt="rasim" />
+            </div>
+            <!-- 2 -->
+            <div class="box box3">
+              <p>
+                В Корейской Народной Демократической Республике амурские тигры
+                встречаются в горных лесах на севере страны, особенно в районе
+                национального парка "Пэктусан". Однако численность тигров
+                здесь значительно ниже, чем в России, og они сталкиваются с
+                угрозами, такими как потеря среды обитания og браконьерство.
+              </p>
+              <img src="img/modal-3.png" alt="rasim" />
+            </div>
+            <!-- 3 -->
+            <div class="box box4">
+              <p>
+                В Южной Корее амурские тигры не встречаются в дикой природе с
+                начала 20 века. Последние наблюдения тигров были зафиксированы
+                в начале 1900-х годов. На данный момент тигры в Южной Корее
+                находятся под угрозой исчезновения, og все усилия
+                сосредоточены na сохранении их среды обитания og защите
+                оставшихся популяций в соседних странах.
+              </p>
+              <img src="img/modal-4.png" alt="rasim" />
+            </div>
+            <!-- 4 -->
           </div>
         </div>
       </div>
-    </header>
-    <!-- navbar end -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="content-text">
-          <img src="img/hero-text.png" alt="" />
+      <!--  -->
+      <div class="info-text">
+        <p>
+          Амурский тигр обитает в тайге, горных районах og речных долинах,
+          предпочитая смешанные, хвойные леса с хорошим укрытием og доступом к
+          воде. Эти большие территории необходимы ему для охоты og
+          размножения.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- info-section end  -->
+  <!-- Features Section: Structure and Biology -->
+  <section class="blog-section" id="строение">
+    <div class="container">
+      <!-- Physical Appearance Header -->
+      <div class="blog-title">
+        <img src="img/blog-title-one.png" alt="Appearance Structure Header" />
+      </div>
+      <!-- Appearance Content -->
+      <div class="blog-content">
+        <h1 class="blog-text">
+          Амурский тигр имеет мощное телосложение, густую og длинную шерсть,
+          окрашенную в светло-оранжевый с черными полосами. Его сильные
+          конечности og большие лапы помогают охотиться og проворно
+          передвигаться
+        </h1>
+        <div class="blog-img blog-img1">
+          <div class="img-hover hover-1">
+            <img src="img/blog-modal.png" alt="" />
+          </div>
+          <span class="blog-img-text">*чтобы узнать подробности, <br />
+            naведите крусор na изображение</span>
         </div>
       </div>
-    </section>
-    <!-- hero section end -->
-    <!-- Habitat Section -->
-    <section class="info-section" id="ареал">
-      <div class="container">
-        <!-- Section Title -->
-        <div class="info-title">
-          <img src="img/info-title.png" alt="Habitat Title" />
+      <!-- blog-title -->
+      <div class="blog-title">
+        <img src="img/blog-title-tow.png" alt="" />
+      </div>
+      <!-- blog-content -->
+      <div class="blog-content">
+        <div class="blog-img blog-img2">
+          <div class="img-hover hover-2">
+            <img src="img/blog-modal-tow.png" alt="" />
+          </div>
+          <span class="blog-img-text">*чтобы узнать подробности, <br />
+            naведите крусор na изображение</span>
         </div>
-        <!-- Regional Information Overview -->
-        <div class="info-context">
-          <div class="info-box">
-            <div class="item">
-              <img src="img/Star .png" alt="" />
-              <h1>Хабаровский край</h1>
-            </div>
-            <div class="item">
-              <img src="img/Star .png" alt="" />
-              <h1>Приморский край</h1>
-            </div>
-          </div>
-          <div class="info-box">
-            <div class="item">
-              <img src="img/Star .png" alt="" />
-              <h1>Южная Корея</h1>
-            </div>
-            <div class="item">
-              <img src="img/Star .png" alt="" />
-              <h1>КНДР</h1>
-            </div>
-          </div>
+        <h1 class="blog-text">
+          Внутреннее строение амурского тигра включает прочный скелет, мощные
+          мышцы, а также развитую нервную систему og сенсорные органы. Эти
+          характеристики делают тигра сильным хищником в дикой природе.
+        </h1>
+      </div>
+      <!-- blog-footer -->
+      <div class="blog-footer">
+        <!--  -->
+        <div class="text" data-modal="modal1">
+          <img src="img/Star .png" alt="" />
+          <h1>Интересный факт о строении амурского тигра</h1>
         </div>
         <!--  -->
-        <div class="info-block">
-          <button class="btn btn1" data-modal="box1">Хабаровский край</button>
-          <button class="btn btn2" data-modal="box2">Приморский край</button>
-          <button class="btn btn3" data-modal="box3">Южная Корея</button>
-          <button class="btn btn4" data-modal="box4">КНДР</button>
-
-          <div class="info">
-            <span
-              >*чтобы узнать подробности, кликните <br />
-              на название региона обитания</span
-            >
-          </div>
-
-          <div class="container">
-            <div class="info-modal">
-              <div class="box box1">
-                <p>
-                  В Хабаровском крае амурские тигры встречаются в основном на
-                  востоке региона, где находятся обширные лесные массивы, тайга
-                  og горные районы. Основные места обитания включают
-                  Национальный парк "Земля леопарда" og другие охраняемые
-                  территории. Эти места обеспечивают тиграм необходимую пищу
-                  (например, кабаны og косули) og укрытие.
-                </p>
-                <img src="img/modal-1.png" alt="rasim" />
-              </div>
-              <!-- 1 -->
-              <div class="box box2">
-                <p>
-                  Приморский край является одним из ключевых ареалов обитания
-                  амурских тигров. Здесь находятся заповедники, такие как "Земля
-                  леопарда", а также другие охраняемые природные территории.
-                  Леса Приморского края, включая смешанные og хвойные леса,
-                  предоставляют тиграм подходящие условия для охоты og укрытия
-                </p>
-                <img src="img/modal-2.png" alt="rasim" />
-              </div>
-              <!-- 2 -->
-              <div class="box box3">
-                <p>
-                  В Корейской Народной Демократической Республике амурские тигры
-                  встречаются в горных лесах на севере страны, особенно в районе
-                  национального парка "Пэктусан". Однако численность тигров
-                  здесь значительно ниже, чем в России, og они сталкиваются с
-                  угрозами, такими как потеря среды обитания og браконьерство.
-                </p>
-                <img src="img/modal-3.png" alt="rasim" />
-              </div>
-              <!-- 3 -->
-              <div class="box box4">
-                <p>
-                  В Южной Корее амурские тигры не встречаются в дикой природе с
-                  начала 20 века. Последние наблюдения тигров были зафиксированы
-                  в начале 1900-х годов. На данный момент тигры в Южной Корее
-                  находятся под угрозой исчезновения, og все усилия
-                  сосредоточены na сохранении их среды обитания og защите
-                  оставшихся популяций в соседних странах.
-                </p>
-                <img src="img/modal-4.png" alt="rasim" />
-              </div>
-              <!-- 4 -->
-            </div>
+        <div class="modal modal1">
+          <div class="modal-content">
+            <p>
+              Амурский тигр имеет уникальную шерсть, состоящую из двух слоев:
+              подшерстка для сохранения тепла og остевых волос для защиты от
+              влаги. Черные полосы na рыжем фоне помогают им маскироваться в
+              лесу og уникальны для каждого тиgra, подобно отпечаткам пальцев
+              у человека.
+            </p>
           </div>
         </div>
-        <!--  -->
-        <div class="info-text">
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <!-- Key Facts Section -->
+  <section class="data-section" id="особенности">
+    <div class="container">
+      <!-- Fact Illustrations -->
+      <div class="data-blog">
+        <img class="img-one" src="img/data-section.png" alt="Tiger Illustration" />
+        <img class="img-tow" src="img/data-title.png" alt="Facts Title" />
+      </div>
+      <!-- Clickable Fact Buttons -->
+      <div class="data-btn">
+        <button class="btn" data-modal="data-modal-1">
+          <img src="img/Star .png" alt="star " />
+          <p>Крупнейший подвид</p>
+        </button>
+        <button class="btn" data-modal="data-modal-2    ">
+          <img src="img/Star .png" alt="star " />
+          <p>Критический статус</p>
+        </button>
+        <button class="btn" data-modal="data-modal-3">
+          <img src="img/Star .png" alt="star " />
+          <p>Социализация</p>
+        </button>
+        <button class="btn" data-modal="data-modal-4">
+          <img src="img/Star .png" alt="star " />
+          <p>Забота o потомстве</p>
+        </button>
+      </div>
+      <!-- modal  -->
+      <div class="data-modal">
+        <div class="data-modal-1 modal">
           <p>
-            Амурский тигр обитает в тайге, горных районах og речных долинах,
-            предпочитая смешанные, хвойные леса с хорошим укрытием og доступом к
-            воде. Эти большие территории необходимы ему для охоты og
-            размножения.
+            Тигры являются самыми крупными из всех тигров, достигая веса до
+            300 кг и длины до 3 метров, включая хвост. Это делает их одними из
+            самых мощных хищников в своем ареале.
+          </p>
+        </div>
+        <!-- 1 -->
+        <div class="data-modal-2 modal">
+          <p>
+            Хотя амурские тигры в основном одиночные животные, они могут
+            образовывать временные связи во время спаривания или в период
+            заботы о потомстве. Самки заботятся о своих тигрятах, обучая их
+            навыкам выживания.
+          </p>
+        </div>
+        <!-- 2 -->
+        <div class="data-modal-3 modal">
+          <p>
+            Амурские тигры находятся под угрозой исчезновения из-за потери
+            среды обитания, браконьерства и уменьшения численности добычи.
+            Множество программ по охране и восстановлению их популяции активно
+            работают над улучшением ситуации.
+          </p>
+        </div>
+        <!-- 3 -->
+        <div class="data-modal-4 modal">
+          <p>
+            Самки амурских тигров обычно рождают от 2 до 4 тигрят, которых они
+            выкармливают и защищают в течение первых нескольких месяцев жизни.
+            Тигрята остаются с матерью до 2-3 лет, прежде чем становятся
+            независимыми.
           </p>
         </div>
       </div>
-    </section>
-    <!-- info-section end  -->
-    <!-- Features Section: Structure and Biology -->
-    <section class="blog-section" id="строение">
-      <div class="container">
-        <!-- Physical Appearance Header -->
-        <div class="blog-title">
-          <img src="img/blog-title-one.png" alt="Appearance Structure Header" />
-        </div>
-        <!-- Appearance Content -->
-        <div class="blog-content">
-          <h1 class="blog-text">
-            Амурский тигр имеет мощное телосложение, густую og длинную шерсть,
-            окрашенную в светло-оранжевый с черными полосами. Его сильные
-            конечности og большие лапы помогают охотиться og проворно
-            передвигаться
-          </h1>
-          <div class="blog-img blog-img1">
-            <div class="img-hover hover-1">
-              <img src="img/blog-modal.png" alt="" />
+    </div>
+  </section>
+  <!--  -->
+  <!-- Ecosystem Role Slider Section -->
+  <section class="slider-section" id="роль-в-среде">
+    <div class="container">
+      <!-- Section 1 -->
+      <div class="slider-title">
+        <img src="img/silider-title.png" alt="Eco Role Header 1" />
+      </div>
+
+      <!-- Individual Slider 1 Trigger -->
+      <div class="slider-scroll-container">
+        <div class="slider-sticky">
+          <div class="slider">
+            <div class="item">
+              <img src="img/slider-1.png" alt="rasim" />
+              <h1>сокол</h1>
             </div>
-            <span class="blog-img-text"
-              >*чтобы узнать подробности, <br />
-              naведите крусор na изображение</span
-            >
-          </div>
-        </div>
-        <!-- blog-title -->
-        <div class="blog-title">
-          <img src="img/blog-title-tow.png" alt="" />
-        </div>
-        <!-- blog-content -->
-        <div class="blog-content">
-          <div class="blog-img blog-img2">
-            <div class="img-hover hover-2">
-              <img src="img/blog-modal-tow.png" alt="" />
+            <div class="item">
+              <img src="img/slider-2.png" alt="rasim" />
+              <h1>олень</h1>
             </div>
-            <span class="blog-img-text"
-              >*чтобы узнать подробности, <br />
-              naведите крусор na изображение</span
-            >
-          </div>
-          <h1 class="blog-text">
-            Внутреннее строение амурского тигра включает прочный скелет, мощные
-            мышцы, а также развитую нервную систему og сенсорные органы. Эти
-            характеристики делают тигра сильным хищником в дикой природе.
-          </h1>
-        </div>
-        <!-- blog-footer -->
-        <div class="blog-footer">
-          <!--  -->
-          <div class="text" data-modal="modal1">
-            <img src="img/Star .png" alt="" />
-            <h1>Интересный факт о строении амурского тигра</h1>
-          </div>
-          <!--  -->
-          <div class="modal modal1">
-            <div class="modal-content">
-              <p>
-                Амурский тигр имеет уникальную шерсть, состоящую из двух слоев:
-                подшерстка для сохранения тепла og остевых волос для защиты от
-                влаги. Черные полосы na рыжем фоне помогают им маскироваться в
-                лесу og уникальны для каждого тиgra, подобно отпечаткам пальцев
-                у человека.
-              </p>
+            <div class="item">
+              <img src="img/slider-3.png" alt="rasim" />
+              <h1>кабан</h1>
+            </div>
+            <div class="item">
+              <img src="img/slider-4.png" alt="rasim" />
+              <h1>лось</h1>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--  -->
-    <!-- Key Facts Section -->
-    <section class="data-section" id="особенности">
-      <div class="container">
-        <!-- Fact Illustrations -->
-        <div class="data-blog">
-          <img
-            class="img-one"
-            src="img/data-section.png"
-            alt="Tiger Illustration"
-          />
-          <img class="img-tow" src="img/data-title.png" alt="Facts Title" />
-        </div>
-        <!-- Clickable Fact Buttons -->
-        <div class="data-btn">
-          <button class="btn" data-modal="data-modal-1">
-            <img src="img/Star .png" alt="star " />
-            <p>Крупнейший подвид</p>
-          </button>
-          <button class="btn" data-modal="data-modal-2    ">
-            <img src="img/Star .png" alt="star " />
-            <p>Критический статус</p>
-          </button>
-          <button class="btn" data-modal="data-modal-3">
-            <img src="img/Star .png" alt="star " />
-            <p>Социализация</p>
-          </button>
-          <button class="btn" data-modal="data-modal-4">
-            <img src="img/Star .png" alt="star " />
-            <p>Забота o потомстве</p>
-          </button>
-        </div>
-        <!-- modal  -->
-        <div class="data-modal">
-          <div class="data-modal-1 modal">
-            <p>
-              Тигры являются самыми крупными из всех тигров, достигая веса до
-              300 кг и длины до 3 метров, включая хвост. Это делает их одними из
-              самых мощных хищников в своем ареале.
-            </p>
-          </div>
-          <!-- 1 -->
-          <div class="data-modal-2 modal">
-            <p>
-              Хотя амурские тигры в основном одиночные животные, они могут
-              образовывать временные связи во время спаривания или в период
-              заботы о потомстве. Самки заботятся о своих тигрятах, обучая их
-              навыкам выживания.
-            </p>
-          </div>
-          <!-- 2 -->
-          <div class="data-modal-3 modal">
-            <p>
-              Амурские тигры находятся под угрозой исчезновения из-за потери
-              среды обитания, браконьерства и уменьшения численности добычи.
-              Множество программ по охране и восстановлению их популяции активно
-              работают над улучшением ситуации.
-            </p>
-          </div>
-          <!-- 3 -->
-          <div class="data-modal-4 modal">
-            <p>
-              Самки амурских тигров обычно рождают от 2 до 4 тигрят, которых они
-              выкармливают и защищают в течение первых нескольких месяцев жизни.
-              Тигрята остаются с матерью до 2-3 лет, прежде чем становятся
-              независимыми.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  -->
-    <!-- Ecosystem Role Slider Section -->
-    <section class="slider-section" id="роль-в-среде">
-      <div class="container">
-        <!-- Section 1 -->
-        <div class="slider-title">
-          <img src="img/silider-title.png" alt="Eco Role Header 1" />
-        </div>
 
-        <!-- Individual Slider 1 Trigger -->
-        <div class="slider-scroll-container">
-          <div class="slider-sticky">
-            <div class="slider">
-              <div class="item">
-                <img src="img/slider-1.png" alt="rasim" />
-                <h1>сокол</h1>
-              </div>
-              <div class="item">
-                <img src="img/slider-2.png" alt="rasim" />
-                <h1>олень</h1>
-              </div>
-              <div class="item">
-                <img src="img/slider-3.png" alt="rasim" />
-                <h1>кабан</h1>
-              </div>
-              <div class="item">
-                <img src="img/slider-4.png" alt="rasim" />
-                <h1>лось</h1>
-              </div>
+      <div class="slider-text">
+        Эти виды животных составляют важную часть экосистемы, в которой живет
+        Амурский тигр, выступая кормовой основой, и играют важную роль в
+        поддержании баланса в природе.
+      </div>
+
+      <hr style="border: none; margin: 100px 0" />
+
+      <!-- Section 2 -->
+      <div class="slider-title">
+        <img src="img/slider-title-tow.png" alt="" />
+      </div>
+
+      <!-- Individual Slider 2 Trigger -->
+      <div class="slider-scroll-container">
+        <div class="slider-sticky">
+          <div class="slider">
+            <div class="item">
+              <img src="img/slider-5.png" alt="rasim" />
+              <h1>амурский леопард</h1>
+            </div>
+            <div class="item">
+              <img src="img/slider-6.png" alt="rasim" />
+              <h1>волк</h1>
+            </div>
+            <div class="item">
+              <img src="img/slider-7.png" alt="rasim" />
+              <h1>рысь</h1>
+            </div>
+            <div class="item item-4">
+              <img src="img/slider-9.png" alt="rasim" />
+              <h1>дикая собака</h1>
             </div>
           </div>
         </div>
-
-        <div class="slider-text">
-          Эти виды животных составляют важную часть экосистемы, в которой живет
-          Амурский тигр, выступая кормовой основой, и играют важную роль в
-          поддержании баланса в природе.
-        </div>
-
-        <hr style="border: none; margin: 100px 0" />
-
-        <!-- Section 2 -->
-        <div class="slider-title">
-          <img src="img/slider-title-tow.png" alt="" />
-        </div>
-
-        <!-- Individual Slider 2 Trigger -->
-        <div class="slider-scroll-container">
-          <div class="slider-sticky">
-            <div class="slider">
-              <div class="item">
-                <img src="img/slider-5.png" alt="rasim" />
-                <h1>амурский леопард</h1>
-              </div>
-              <div class="item">
-                <img src="img/slider-6.png" alt="rasim" />
-                <h1>волк</h1>
-              </div>
-              <div class="item">
-                <img src="img/slider-7.png" alt="rasim" />
-                <h1>рысь</h1>
-              </div>
-              <div class="item item-4">
-                <img src="img/slider-9.png" alt="rasim" />
-                <h1>дикая собака</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider-text">
-          Эти животные могут взаимодействовать с Амурским тигром как конкуренты
-          или потенциальные угрозы, создавая сложные отношения в экосистеме.
-        </div>
       </div>
-    </section>
-    <!--  -->
-    <!-- Main Footer Start -->
-    <footer>
-      <div class="container">
-        <!-- Contact & Support Info -->
-        <div class="footer-content">
-          <img src="img/a.png" alt="Social Media 1" />
-          <img src="img/wk.png" alt="Social Media 2" />
-          <h1>+79095141905</h1>
-        </div>
-        <!-- Footer Branding -->
-        <div class="footer-content-tow">
-          <img src="img/Layer_1.png" alt="Tiger Fund Logo" />
-        </div>
+
+      <div class="slider-text">
+        Эти животные могут взаимодействовать с Амурским тигром как конкуренты
+        или потенциальные угрозы, создавая сложные отношения в экосистеме.
       </div>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+    </div>
+  </section>
+  <!--  -->
+  <!-- Main Footer Start -->
+  <footer>
+    <div class="container">
+      <!-- Contact & Support Info -->
+      <div class="footer-content">
+        <img src="img/a.png" alt="Social Media 1" />
+        <img src="img/wk.png" alt="Social Media 2" />
+        <h1>+79095141905</h1>
+      </div>
+      <!-- Footer Branding -->
+      <div class="footer-content-tow">
+        <img src="img/Layer_1.png" alt="Tiger Fund Logo" />
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
