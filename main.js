@@ -1,53 +1,64 @@
-// =======================
-// 1️⃣ UNIVERSAL OCHISH (btn + text)
-// =======================
+// ==========================================
+// 1. UNIVERSAL MODAL OPENER (btn + text)
+// ==========================================
+const backdrop = document.getElementById('modal-backdrop');
+
 document.querySelectorAll('[data-modal]').forEach(trigger => {
     trigger.addEventListener('click', function (e) {
-        e.stopPropagation(); // event yuqoriga chiqmasligi uchun
+        e.stopPropagation(); // Prevent event bubbling
 
-        const name = this.getAttribute('data-modal');
+        const name = this.getAttribute('data-modal').trim();
 
-        // hamma box va modalni yopamiz
+        // Close all currently open boxes and modals
         document.querySelectorAll('.box, .modal').forEach(el => {
             el.classList.remove('active');
         });
 
-        // kerakli elementni ochamiz
+        // Open the target element and the backdrop
         const target = document.querySelector(`.${name}`);
         if (target) {
             target.classList.add('active');
+            if (backdrop) backdrop.classList.add('active');
         }
     });
 });
 
-// =======================
-// 2️⃣ BOX / MODAL YOPISH (overlay yoki <p> bosilganda)
-// =======================
+// ==========================================
+// 2. GLOBAL CLOSE FUNCTION
+// ==========================================
+function closeAllModals() {
+    document.querySelectorAll('.box, .modal, .modal-backdrop').forEach(el => {
+        el.classList.remove('active');
+    });
+}
+
+// Close when clicking the semi-transparent backdrop
+if (backdrop) {
+    backdrop.addEventListener('click', closeAllModals);
+}
+
+// Close logic for clicking within the modal area (optional functionality)
 document.querySelectorAll('.box, .modal').forEach(el => {
     el.addEventListener('click', function (e) {
-        const isOverlay = e.target === this; // fon bosilganda
-        const isParagraph = e.target.tagName === 'P'; // ichidagi text bosilganda
-
-        if (isOverlay || isParagraph) {
-            this.classList.remove('active');
+        // If clicking directly on the modal container or the paragraph inside (as per original logic)
+        if (e.target === this || e.target.tagName === 'P') {
+            closeAllModals();
         }
     });
 });
 
-// =======================
-// 3️⃣ ESC BOSILSA HAMMASINI YOPISH
-// =======================
+// ==========================================
+// 3. KEYBOARD SUPPORT (Escape key to close everything)
+// ==========================================
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
-        document.querySelectorAll('.box, .modal').forEach(el => {
-            el.classList.remove('active');
-        });
+        closeAllModals();
     }
 });
 
-// =======================
-// 4️⃣ HAMBURGER MENU TOGGLE
-// =======================
+// ==========================================
+// 4. MOBILE HAMBURGER MENU TOGGLE
+// ==========================================
 const hamburger = document.getElementById('hamburger');
 const menu = document.querySelector('.menu');
 
@@ -57,7 +68,7 @@ if (hamburger && menu) {
         hamburger.classList.toggle('active');
     });
 
-    // Close menu when a link is clicked
+    // Automatically close mobile menu when a navigation link is clicked
     menu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.remove('active');
